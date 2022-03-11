@@ -14,7 +14,7 @@ from tkinter.tix import Tree
 import environ
 import os
 
-import django_heroku
+
 
 from pathlib import Path
 
@@ -149,4 +149,5 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Activate Django-Heroku.
+import django_heroku
 django_heroku.settings(locals())
