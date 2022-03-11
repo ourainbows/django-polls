@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 
+from tkinter.tix import Tree
 import environ
 import os
 
@@ -36,7 +37,7 @@ environ.Env.read_env(os.path.join(BASE_DIR, '.env'))
 SECRET_KEY = 'django-insecure-#yddd8)gn639c^3iwuxs!g$fxaehc01qkic4p$7&)s8t7rcw3@'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 ALLOWED_HOSTS = ["*"]
 
 
@@ -97,7 +98,7 @@ DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.mysql',
             'NAME': env("NAME"),
-            'USER': env("USER"),
+            'USER': "uc7tl4y8ixut1lb6",
             'PASSWORD': env("PASSWORD"),
             'HOST': env("HOST"),
             'PORT': env("PORT"),
