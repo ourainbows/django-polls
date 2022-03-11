@@ -6,6 +6,7 @@ Django==4.0.3
 django-environ==0.8.1
 django-heroku==0.0.0
 gunicorn==20.1.0
+psycopg2-binary==2.9.3
 pycparser==2.21
 PyMySQL==1.0.2
 sqlparse==0.4.2
