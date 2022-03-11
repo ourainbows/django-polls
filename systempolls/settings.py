@@ -96,11 +96,11 @@ DATABASES = {
 DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.mysql',
-            'NAME': env("NAME"),
+            'NAME':"bennrvie9lnaaaionnub",
             'USER': "uc7tl4y8ixut1lb6",
-            'PASSWORD': env("PASSWORD"),
-            'HOST': env("HOST"),
-            'PORT': env("PORT"),
+            'PASSWORD': "kkmMrOTWHerv0PZU47xy",
+            'HOST': "bennrvie9lnaaaionnub-mysql.services.clever-cloud.com",
+            'PORT': 3306,
         }
 }
 
