@@ -1,9 +1,27 @@
-<h1>{{ question.question_text }}</h1>
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Django Polls</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'polls/result.css' %}"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>{{ question.question_text }}</h1>
 
-<ul>
-{% for choice in question.choice_set.all %}
-    <li>{{ choice.choice_text }} -- {{ choice.votes }} vote{{ choice.votes|pluralize }}</li>
-{% endfor %}
-</ul>
-
-<a href="{% url 'polls:detail' question.id %}">Vote again?</a>
+      <ul>
+        {% for choice in question.choice_set.all %}
+        <li>{{ choice.choice_text }} -- {{ choice.votes }} votos</li>
+        {% endfor %}
+      </ul>
+      <a href="{% url 'polls:detail' question.id %}"
+        >¿Quieres votar otra vez?</a
+      >
+    </div>
+  </body>
+</html>
