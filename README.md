@@ -8,7 +8,7 @@ Django polls it's a basic application for make a basic polls.
  python manage.py runserver
 ```
 
-![polls](https://drive.google.com/file/d/1OQ5wvgnK8yPsh2SCDOm4913OeYWzHFjR/view)
+![polls](./polls/static/polls)
 
 
 ## Documentation
