@@ -7,7 +7,7 @@ Django polls it's a basic application for make a basic polls.
 ```bash
  python manage.py runserver
 ```
-
+![To do app](./image.png)
 ![polls](./polls/static/polls)
 
 
